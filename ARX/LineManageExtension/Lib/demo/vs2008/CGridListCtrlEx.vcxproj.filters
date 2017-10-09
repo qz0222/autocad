@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="CGridListCtrlEx">
+      <UniqueIdentifier>{b39aa11e-b114-4e32-b73d-db70e3731ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CGridListCtrlEx\Source Files">
+      <UniqueIdentifier>{be463b71-30a8-4f46-9f36-799cfef8df00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CGridListCtrlEx\Header Files">
+      <UniqueIdentifier>{7e805952-184b-46d1-98a7-19c2df94ce77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DemoApplication\CGridListCtrlExApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DemoApplication\CGridListCtrlExDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DemoApplication\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridColumnTraitCombo.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridColumnTraitDateTime.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridColumnTraitEdit.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridColumnTraitHyperLink.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridColumnTraitImage.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridColumnTraitMultilineEdit.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridColumnTraitText.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridListCtrlEx.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridListCtrlGroups.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridRowTraitText.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\CGridRowTraitXP.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGridListCtrlEx\ViewConfigSection.cpp">
+      <Filter>CGridListCtrlEx\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DemoApplication\CGridListCtrlExApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DemoApplication\CGridListCtrlExDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DemoApplication\CListCtrl_DataModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DemoApplication\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DemoApplication\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTrait.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTraitCombo.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTraitDateTime.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTraitEdit.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTraitHyperLink.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTraitImage.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTraitMultilineEdit.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTraitText.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridColumnTraitVisitor.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridListCtrlEx.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridListCtrlGroups.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridRowTrait.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridRowTraitText.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridRowTraitVisitor.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\CGridRowTraitXP.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGridListCtrlEx\ViewConfigSection.h">
+      <Filter>CGridListCtrlEx\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DemoApplication\res\CGridListCtrlEx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\DemoApplication\res\CGridListCtrlEx.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\DemoApplication\res\FLGDEN.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\DemoApplication\res\FLGSWED.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Documentation\CGridListCtrlEx.htm" />
+    <None Include="..\DemoApplication\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\DemoApplication\CGridListCtrlEx.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

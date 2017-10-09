@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CGridListCtrlEx">
+</Property><Property Name="Solution File" Value="C:\Users\chgu\Dropbox\Master\AutoCAD\ARX\LineManageAssitant\Lib\demo\vs2008\CGridListCtrlEx.sln">
+</Property><Property Name="Date" Value="2012年12月19日">
+</Property><Property Name="Time" Value="20:01">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CGridListCtrlEx.sln" Description="File successfully backed up as C:\Users\chgu\Dropbox\Master\AutoCAD\ARX\LineManageAssitant\Lib\demo\vs2008\CGridListCtrlEx.sln.old">
+</Event><Event ErrorLevel="0" Project="CGridListCtrlEx" Source="CGridListCtrlEx.vcproj" Description="Converting project file 'C:\Users\chgu\Dropbox\Master\AutoCAD\ARX\LineManageAssitant\Lib\demo\vs2008\CGridListCtrlEx.vcproj'.">
+</Event><Event ErrorLevel="1" Project="CGridListCtrlEx" Source="CGridListCtrlEx.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="CGridListCtrlEx" Source="CGridListCtrlEx.vcproj" Description="Done converting to new project file 'C:\Users\chgu\Dropbox\Master\AutoCAD\ARX\LineManageAssitant\Lib\demo\vs2008\CGridListCtrlEx.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="CGridListCtrlEx" Source="CGridListCtrlEx.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CGridListCtrlEx.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CGridListCtrlEx.sln" Description="Converted">
+</Event></UpgradeLog>

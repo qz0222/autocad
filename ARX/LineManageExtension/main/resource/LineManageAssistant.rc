@@ -1,0 +1,462 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "管线辅助"
+    BEGIN
+        MENUITEM "类型定义",                        ID_LINE_CONFIG
+        MENUITEM "位置录入",                        ID_INPUT_POINT
+        POPUP "辅助切图"
+        BEGIN
+            MENUITEM "生成切图",                        ID_GENERATE_CUT
+            MENUITEM "恢复视窗",                        ID_GENERATE_BACK
+        END
+        MENUITEM "功能测试",                        ID_MENU_TEST
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 273, 164
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,216,7,50,14
+    CONTROL         "Select Point",IDC_BUTTON_POINT,"Button",BS_OWNERDRAW | WS_TABSTOP,12,17,16,16
+    EDITTEXT        IDC_EDIT_XPT,53,17,52,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YPT,53,34,52,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZPT,53,51,52,15,ES_AUTOHSCROLL
+    CONTROL         "Select Angle",IDC_BUTTON_ANGLE,"Button",BS_OWNERDRAW | WS_TABSTOP,12,79,17,16
+    EDITTEXT        IDC_EDIT_ANGLE,53,79,52,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_REGAPPS,11,126,93,40,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_BLOCKS,121,17,79,121,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,216,24,50,14
+    GROUPBOX        "AcUi Edit and Button Controls",IDC_STATIC_GROUP1,7,7,104,100
+    GROUPBOX        "AcUi Combo Box Control",IDC_STATIC_GROUP3,7,113,103,44
+    GROUPBOX        "AcUi List Control",IDC_STATIC_GROUP2,114,7,93,150
+    LTEXT           "(Registered App. Names)",IDC_STATIC_TEXT3,11,141,97,10
+    LTEXT           "(Current DB Block Names)",IDC_STATIC_TEXT2,120,141,85,8
+END
+
+IDD_DIALOG_LINE_CONFIG DIALOGEX 0, 0, 515, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_LINE_CONFIG,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,501,229
+END
+
+IDD_DIALOG_LINE_CONFIG_ADD DIALOGEX 0, 0, 412, 279
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新增管线"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,287,254,50,14
+    PUSHBUTTON      "取消",IDCANCEL,355,254,50,14
+    LTEXT           "名       称",IDC_STATIC,20,32,31,8
+    EDITTEXT        IDC_EDIT_NAME,61,26,131,14,ES_AUTOHSCROLL
+    LTEXT           "断面形状",IDC_STATIC,21,90,33,8
+    LTEXT           "长度单位",IDC_STATIC,220,90,33,8
+    LTEXT           "安全半径",IDC_STATIC,21,151,33,8
+    LTEXT           "描        述",IDC_STATIC,18,199,33,8
+    EDITTEXT        IDC_EDIT_DESC,58,198,333,41,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SAFESIZE,61,146,131,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RADIUS,61,116,131,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_KIND,259,28,131,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SHAPE,61,86,131,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UNIT,259,86,131,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "基本信息",IDC_STATIC,12,10,385,43
+    GROUPBOX        "形状大小",IDC_STATIC,12,64,385,112
+    GROUPBOX        "扩展信息",IDC_STATIC,12,182,385,65
+    LTEXT           "种        类",IDC_STATIC,220,32,33,8
+    LTEXT           "壁        厚",IDC_STATIC,220,122,33,8
+    EDITTEXT        IDC_EDIT_WALLSIZE,259,116,131,14,ES_AUTOHSCROLL
+    LTEXT           "半        径",IDC_STATIC_RADIUS,21,122,33,8
+    EDITTEXT        IDC_EDIT_SIZE_LENGTH,61,116,50,14,ES_AUTOHSCROLL
+    LTEXT           "长",IDC_STATIC_LENGTH,45,122,9,8
+    LTEXT           "宽",IDC_STATIC_WIDTH,123,122,9,8
+    EDITTEXT        IDC_EDIT_SIZE_WIDTH,142,116,50,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ENTRY_MANAGE DIALOGEX 0, 0, 686, 345
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管线管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确认坐标数据",IDOK,535,88,67,14
+    PUSHBUTTON      "关闭",IDCANCEL,629,324,50,14
+    PUSHBUTTON      "新增",IDC_BUTTON_ADD,22,324,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,179,324,50,14
+    CONTROL         "",IDC_TREE_LINES,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,22,22,209,284
+    CONTROL         "",IDC_LIST_LINE_DETAIL,"SysListView32",LVS_REPORT | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,259,88,267,217
+    LTEXT           "编号",IDC_STATIC,260,28,17,8
+    EDITTEXT        IDC_EDIT_NO,283,22,83,14,ES_AUTOHSCROLL
+    LTEXT           "名称",IDC_STATIC,376,28,17,8
+    EDITTEXT        IDC_EDIT_NAME,401,22,150,14,ES_AUTOHSCROLL
+    LTEXT           "种类",IDC_STATIC,564,28,17,8
+    EDITTEXT        IDC_EDIT_KIND,586,22,76,14,ES_AUTOHSCROLL
+    GROUPBOX        "基本信息",IDC_STATIC,249,9,421,36
+    GROUPBOX        "折线段位置",IDC_STATIC,249,49,422,266
+    GROUPBOX        "管线集合",IDC_STATIC,14,10,226,305
+    CONTROL         "平面视图",IDC_RADIO_FLAT,"Button",BS_AUTORADIOBUTTON,262,69,48,10
+    CONTROL         "高程视图",IDC_RADIO_LEVEL,"Button",BS_AUTORADIOBUTTON,335,69,48,10
+    PUSHBUTTON      "更新",IDC_BUTTON_UPDATE,100,324,50,14
+    LTEXT           "2. 双击单元格更新坐标",IDC_STATIC,539,161,112,13
+    PUSHBUTTON      "删除选中的坐标",IDC_BUTTON_DEL_POINT,533,65,72,14,NOT WS_VISIBLE
+    GROUPBOX        "使用说明",IDC_STATIC,532,115,135,190
+    LTEXT           "3. 按“D”键可删除选中的坐标",IDC_STATIC,539,187,109,13
+    EDITTEXT        IDC_EDIT_POINT,611,65,49,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "1. 双击空白区域可增加新坐标",IDC_STATIC,539,135,109,13
+END
+
+IDD_DIALOG_CUT_POS DIALOGEX 0, 0, 187, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_PALETTEWINDOW
+CAPTION "确定切面位置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,47,100,50,14
+    PUSHBUTTON      "取消",IDCANCEL,119,100,50,14
+    GROUPBOX        "选择垂直轴方向",IDC_STATIC,14,11,67,78
+    CONTROL         "X轴",IDC_X,"Button",BS_AUTORADIOBUTTON | WS_GROUP,27,32,28,10
+    CONTROL         "Y轴",IDC_Y,"Button",BS_AUTORADIOBUTTON,27,49,28,10
+    CONTROL         "Z轴",IDC_Z,"Button",BS_AUTORADIOBUTTON,27,64,28,10
+    GROUPBOX        "输入偏移的距离",IDC_STATIC,103,51,67,36
+    EDITTEXT        IDC_OFFSET,113,66,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "拾取切点",IDC_STATIC,102,11,67,36
+    CONTROL         "",IDC_BUTTON_PICKCUT,"Button",BS_OWNERDRAW | WS_TABSTOP,120,25,28,14
+END
+
+IDD_DIALOG_BLOCK_CONFIG_ADD DIALOGEX 0, 0, 412, 331
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新增阻隔体"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,287,306,50,14
+    PUSHBUTTON      "取消",IDCANCEL,355,306,50,14
+    LTEXT           "名       称",IDC_STATIC,20,32,31,8
+    EDITTEXT        IDC_EDIT_NAME,61,26,131,14,ES_AUTOHSCROLL
+    LTEXT           "断面形状",IDC_STATIC,21,90,33,8
+    LTEXT           "长度单位",IDC_STATIC,220,90,33,8
+    LTEXT           "安全半径",IDC_STATIC,21,151,33,8
+    LTEXT           "描        述",IDC_STATIC,18,251,33,8
+    EDITTEXT        IDC_EDIT_DESC,58,250,333,41,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SAFESIZE,61,146,131,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RADIUS,61,116,131,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_KIND,259,28,131,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SHAPE,61,86,131,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UNIT,259,86,131,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "基本信息",IDC_STATIC,12,10,385,43
+    GROUPBOX        "形状大小",IDC_STATIC,12,64,385,112
+    GROUPBOX        "扩展信息",IDC_STATIC,12,234,385,65
+    LTEXT           "种        类",IDC_STATIC,220,32,33,8
+    LTEXT           "壁        厚",IDC_STATIC,220,122,33,8
+    EDITTEXT        IDC_EDIT_WALLSIZE,259,116,131,14,ES_AUTOHSCROLL
+    LTEXT           "半        径",IDC_STATIC_RADIUS,21,122,33,8
+    EDITTEXT        IDC_EDIT_SIZE_LENGTH,61,116,50,14,ES_AUTOHSCROLL
+    LTEXT           "长",IDC_STATIC_LENGTH,45,122,9,8
+    LTEXT           "宽",IDC_STATIC_WIDTH,123,122,9,8
+    EDITTEXT        IDC_EDIT_SIZE_WIDTH,142,116,50,14,ES_AUTOHSCROLL
+    GROUPBOX        "阻挡属性",IDC_STATIC,11,184,385,41
+    LTEXT           "穿过方向",IDC_STATIC,220,204,33,8
+    COMBOBOX        IDC_COMBO_THROUGH_DIRECTION,260,200,131,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "    可以被穿越",IDC_CHECK_CAN_THROUGH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,202,114,10
+END
+
+IDD_DIALOG_ADD_ENTRY DIALOGEX 0, 0, 314, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新增实体数据"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,166,98,50,14
+    PUSHBUTTON      "取消",IDCANCEL,247,98,50,14
+    LTEXT           "管线名称",IDC_STATIC,18,47,33,8
+    EDITTEXT        IDC_EDIT_NAME,63,45,235,14,ES_AUTOHSCROLL
+    LTEXT           "管线编号",IDC_STATIC,18,76,33,8
+    EDITTEXT        IDC_EDIT_NO,63,73,234,14,ES_AUTOHSCROLL
+    LTEXT           "管线种类",IDC_STATIC,167,18,33,8
+    COMBOBOX        IDC_COMBO_KIND,209,14,89,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "类        别",IDC_STATIC,18,18,33,8
+    COMBOBOX        IDC_COMBO_CATEGORY,63,14,74,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_VECTOR_TRANSFORM DIALOGEX 0, 0, 278, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "矩阵转换"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,148,100,50,14
+    PUSHBUTTON      "取消",IDCANCEL,212,100,50,14
+    GROUPBOX        "坐标转换",-1,15,10,247,80
+    LTEXT           "a00",-1,16,31,13,8
+    LTEXT           "a10",-1,16,47,13,8
+    LTEXT           "a20",-1,16,64,13,8
+    LTEXT           "a01",-1,79,31,22,8
+    LTEXT           "a11",-1,79,46,13,8
+    LTEXT           "a21",-1,79,64,13,8
+    EDITTEXT        IDC_EDIT_A00,34,28,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_A20,34,62,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_A10,34,44,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_A01,98,28,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_A21,98,62,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_A11,98,44,33,14,ES_AUTOHSCROLL
+    LTEXT           "a02",-1,138,30,13,8
+    LTEXT           "a12",-1,138,46,13,8
+    LTEXT           "a22",-1,138,63,13,8
+    EDITTEXT        IDC_EDIT_A02,158,28,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_A22,158,62,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_A12,158,44,33,14,ES_AUTOHSCROLL
+    LTEXT           "t0",-1,201,31,8,8
+    LTEXT           "t1",-1,201,46,8,8
+    LTEXT           "t2",-1,201,64,8,8
+    EDITTEXT        IDC_EDIT_T0,220,28,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_T2,220,62,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_T1,220,44,33,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DIALOG_LINE_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 508
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_DIALOG_LINE_CONFIG_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+        HORZGUIDE, 16
+    END
+
+    IDD_DIALOG_ENTRY_MANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 679
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_DIALOG_CUT_POS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_DIALOG_BLOCK_CONFIG_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 320
+        HORZGUIDE, 16
+    END
+
+    IDD_DIALOG_ADD_ENTRY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG_VECTOR_TRANSFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_LMA TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_BUTTON_CANCLE
+    BUTTON      ID_BUTTON32779
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR_LMA         BITMAP                  "toolbar_lma.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    ID_BUTTON_CANCLE        "删除切图"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\LineManageAssistant.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "AsdkAcUiSample DLL"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "AsdkAcUiSample"
+            VALUE "LegalCopyright", "Copyright 2012 Autodesk, Inc.  All rights reserved."
+            VALUE "OriginalFilename", "AsdkAcUiSample.DLL"
+            VALUE "ProductName", "AsdkAcUiSample Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\LineManageAssistant.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
